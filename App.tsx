@@ -1,39 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image} from 'react-native';
+//Menu
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-     {/* <Text style={styles.texto}> Hello World! No APP</Text> */}
-      <StatusBar style="light" />
-      <Image source={require('./assets/logo.png')} style={styles.logo} resizeMode='contain'/>
-      <Text>
-        A Imp nasceu em janeiro de 2025, com um sonho ousado e uma paixão ardente pelo universo da moda praia.Em meio à energia contagiante do verão, percebemos um espaço para criar algo único: peças que celebrassem a beleza individual, a liberdade e a confiança de cada mulher. 
-        {'\n'}{'\n'}Somos mais que moda praia, somos um estilo de vida. Na Imp, acreditamos que cada peça é uma cAelebração da liberdade, da beleza natural e da confiança. 
-        Um convite para expressar sua essência e brilhar em cada momento.
-        {'\n'}{'\n'} Por isso, cada coleção é cuidadosamente desenhada para ser atemporal, versátil e para se adaptar à personalidade de quem a usa. Somos um convite para viver com leveza, autenticidade e confiança.
-        {'\n'}{'\n'}Nosso objetivo é que cada mulher que escolha Imp se sinta à vontade para brilhar, sem pressa, sem máscaras. Apenas sendo ela mesma, com toda a confiança e liberdade que a moda pode oferecer. Confira a coleção :) 
-      </Text>            
-    </View>
-  );
+//Tela do Sobre
+import Sobre from './telas/Sobre';
+
+//Configuraçâo do Menu
+const Tab = createBottomTabNavigator();
+
+//Cria a estrutura do Menu 
+function Menu() {
+  return <Tab.Navigator>
+            <Tab.Screen name="Sobre" component={Sobre} />
+        </Tab.Navigator>
 }
 
-//instância do componente 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#0d147eff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
 
-  // texto: {
-    // fontSize: 24,
-    // color: '#f8f8f8ff',
-    // fontFamily: 'cursive',
-  
-  logo: {
-    width: 300,
-    height: 300,
-  }
-});
+export default function App() {
+  return <NavigationContainer>
+            <Menu />
+        </NavigationContainer>
+}
