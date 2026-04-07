@@ -1,7 +1,11 @@
+import {View} from "react-native";
 //Menu
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import Ionicons from '@expo/vector-icons/Ionicons'
+import Ionicons from '@expo/vector-icons/Ionicons';
+
+//FONTE
+import { useFonts, OldStandardTT_400Regular, OldStandardTT_400Regular_Italic, OldStandardTT_700Bold} from "@expo-google-fonts/old-standard-tt";
 
 //Tela do Sobre
 import Sobre from './telas/Sobre';
@@ -48,6 +52,18 @@ function Menu() {
 
 
 export default function App() {
+
+  //CARREGA FONTE 
+  const [fonteCarregada] = useFonts({"Old": OldStandardTT_400Regular,
+                                   "Old 2": OldStandardTT_400Regular_Italic,
+                                   "Old 3": OldStandardTT_700Bold});
+
+  //Verificar se a fonte foi carregada 
+  if(!fonteCarregada){
+    return <View></View>
+  }
+
+
   return <NavigationContainer>
     <Menu />
   </NavigationContainer>

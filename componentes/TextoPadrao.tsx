@@ -7,7 +7,8 @@ export default function TextoPadrao({children, estiloEspecifico}: any){
 
 const estilos = StyleSheet.create({
     padrao: {
-        fontSize: 12,
+        fontFamily: 'Old 3',
+        fontSize: 19,
         textAlign: 'justify',
         lineHeight: 20,
     }
