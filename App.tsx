@@ -11,6 +11,14 @@ import { useFonts, OldStandardTT_400Regular, OldStandardTT_400Regular_Italic, Ol
 import Sobre from './telas/Sobre';
 //import { flattenStyle } from "react-native/types_generated/Libraries/ReactPrivate/ReactNativePrivateInterface";
 
+//Tela de Produtos (lista)
+import Produtos from './telas/Produtos/Index';
+import ListaProdutos from './telas/mocks/listaPrdutos'
+
+function MenuProdutos() {
+  return <Produtos {...ListaProdutos} />
+}
+
 //Configuraçâo do Menu
 const Tab = createBottomTabNavigator();
 
@@ -44,7 +52,7 @@ function Menu() {
     })
     } >
     <Tab.Screen name="Sobre" component={Sobre} />
-    <Tab.Screen name="Produtos" component={Sobre} />
+    <Tab.Screen name="Produtos" component={MenuProdutos} />
     <Tab.Screen name="Perfil" component={Sobre} />
 
   </ Tab.Navigator>

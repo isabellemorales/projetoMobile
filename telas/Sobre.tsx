@@ -17,7 +17,7 @@ export default function Sobre() {
       <VideoView player={player} style={styles.video} allowsPictureInPicture/>
       <View style={styles.textoSobre}>
         <StatusBar style="light" />
-        <Image source={require('../assets/logo.png')} style={styles.logo} resizeMode='contain'/>
+        <Image source={require('../assets/logo.png')} style={styles.logo}/>
         <TextoPadrao estiloEspecifico={styles.texto}>
           A Imp nasceu em janeiro de 2025, com um sonho ousado e uma paixão ardente pelo universo da moda praia.Em meio à energia contagiante do verão, percebemos um espaço para criar algo único: peças que celebrassem a beleza individual, a liberdade e a confiança de cada mulher. 
           {'\n'}{'\n'}Somos mais que moda praia, somos um estilo de vida. Na Imp, acreditamos que cada peça é uma cAelebração da liberdade, da beleza natural e da confiança. 
@@ -44,15 +44,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   texto: {
-    color: 'white',
-    // backgroundColor: 'rgb(0,0,0,0.3)',
-    textShadowColor: 'rgba(0, 0, 0, 0.5)', // Cor da sombra com opacidade
-    textShadowOffset: '{ width: 2, height: 2 }',
+    color: 'white'
   },
   logo: {
     width: 300,
-    height: 300,
-    alignSelf: 'center'
+    height: 300, 
+    alignSelf: "center"
   },
 
   video:{
