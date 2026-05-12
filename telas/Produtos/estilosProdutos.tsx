@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 
 const estilosProdutos = StyleSheet.create({
     corFundo: {
-        backgroundColor: "#9900CC",
+        backgroundColor: "#055cdfff",
         paddingBottom: 50,
         paddingTop: 40,
     },
@@ -53,7 +53,7 @@ const estilosProdutos = StyleSheet.create({
         width: "80%",
         height: "70%",
         borderWidth: 6,
-        borderColor: "#6600CC",
+        borderColor: "#055cdfff",
         paddingLeft: 10,
         paddingRight: 10,
     },
@@ -68,14 +68,14 @@ const estilosProdutos = StyleSheet.create({
     },
     botao: {
         width: "30%",
-        backgroundColor: "#6600CC",
+        backgroundColor: "#055cdfff",
         borderWidth: 1,
         borderColor: "white",
         borderRadius: 2,
         paddingBottom: 5,
     },
     botaoFav: {
-        borderColor: "#6600CC",
+        borderColor: "#055cdfff",
         backgroundColor: "#CCCCFF",
     },
     textoBotao: {

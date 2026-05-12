@@ -7,30 +7,35 @@ const lista_produtos = {
                 nome: "Body",
                 descricao: "4pcs. Temos outros modelos e cores.",
                 imagem: require('../../assets/favicon.png'),
+                imagemModal: require('../../assets/logo.png'),
             },
             {
                 id: 2,
                 nome: "Saia Envelope",
                 descricao: "4pcs. Temos outros modelos e cores.",
                 imagem: require('../../assets/logo.png'),
+                imagemModal: require('../../assets/favicon.png'),
             },
             {
                 id: 3,
                 nome: "Chapéu de Palha",
                 descricao: "4pcs. Temos outros modelos e cores.",
                 imagem: require('../../assets/logo.png'),
+                imagemModal: require('../../assets/favicon.png'),
             },
             {
                 id: 4,
                 nome: "Bolsas",
                 descricao: "4pcs. Temos outros modelos e cores.",
                 imagem: require('../../assets/logo.png'),
+                imagemModal: require('../../assets/favicon.png'),
             },
             {
                 id: 5,
                 nome: "Biquínis",
                 descricao: "4pcs. Temos outros modelos e cores.",
                 imagem: require('../../assets/logo.png'),
+                imagemModal: require('../../assets/favicon.png'),
             },
             
         ]
