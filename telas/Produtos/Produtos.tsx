@@ -7,8 +7,7 @@ import {
 	FlatList,
 	Dimensions,
 	Image,
-}
-from "react-native";
+} from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { useNavigation } from "@react-navigation/native";
 
