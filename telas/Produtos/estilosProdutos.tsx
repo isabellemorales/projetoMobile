@@ -65,14 +65,15 @@ const estilosProdutos = StyleSheet.create({
 
 	// ── Pills de categoria ──────────────────────────────────────
 	filtrosContainer: {
-		paddingHorizontal: 14,
-		paddingBottom: 10,
+		paddingHorizontal: 1,
 		gap: 8,
 		flexDirection: "row",
 	},
 	pill: {
 		paddingHorizontal: 14,
-		paddingVertical: 6,
+		paddingVertical: 10,
+		height: 40, 
+		marginBottom: 20,
 		borderRadius: 99,
 		borderWidth: 1,
 		borderColor: "#C8B39B",
@@ -84,7 +85,7 @@ const estilosProdutos = StyleSheet.create({
 	},
 	pillTexto: {
 		fontFamily: "Old",
-		fontSize: 12,
+		fontSize: 18,
 		color: "#5D769B",
 	},
 	pillTextoAtivo: {
@@ -103,8 +104,7 @@ const estilosProdutos = StyleSheet.create({
 
 	// ── Grid ────────────────────────────────────────────────────
 	gridContainer: {
-		paddingHorizontal: 10,
-		paddingBottom: 20,
+		paddingHorizontal: 10
 	},
 	coluna: {
 		justifyContent: "space-between",
@@ -116,6 +116,7 @@ const estilosProdutos = StyleSheet.create({
 		marginBottom: 12,
 	},
 	card: {
+		height: 320,
 		borderWidth: 1,
 		borderColor: "#C8B39B",
 		backgroundColor: "#fff",

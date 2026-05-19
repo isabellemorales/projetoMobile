@@ -34,7 +34,6 @@ export default function Index({ itens }: any) {
 		/* Hook para categoria ativa */
 	}
 	const [categoriaAtiva, setCategoriaAtiva] = useState("Todos");
-
 	{
 		/* Filtra por busca E categoria — usa o campo categoria do mock */
 	}
@@ -77,7 +76,7 @@ export default function Index({ itens }: any) {
 			{/* Pills de categoria */}
 			<ScrollView
 				horizontal
-				showsHorizontalScrollIndicator={false}
+				showsHorizontalScrollIndicator={true}
 				contentContainerStyle={Styles.filtrosContainer}
 			>
 				{CATEGORIAS.map((cat) => (
